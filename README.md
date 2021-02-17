@@ -4,7 +4,7 @@ The codes and data: What they are and what they do (listed in alphabetical order
 Data:
 - ANTUSD.csv: the sentiment dictionary ANTUSD
 - ANTUSD_PosNeg.csv: only the positive and negative words in ANTUSD
-- Yahoo_Chinese_Reviews_Corpus.csv: the Chinese movie reviews corpus 
+- Yahoo_Chinese_Reviews_Corpus.csv: the Chinese movie reviews corpus
 Codes:
 - coll.analysis.R: the collexeme analysis
 - Experiment I.R: Experiment I
