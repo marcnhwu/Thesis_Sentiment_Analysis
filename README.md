@@ -2,23 +2,17 @@
 
 The codes and data: What they are and what they do (listed in alphabetical order)
 Data:
-	•	ANTUSD.csv: the sentiment dictionary ANTUSD
-	•	ANTUSD_PosNeg.csv: only the positive and negative words in ANTUSD
-	•	CV_trials.csv: the record of the performances of every sentiment classifier (for the post-hoc t-test)
-	•	SentiW_dfm.csv: the document-feature matrix (dfm) of the sentiment word features
-	•	Yahoo_Chinese_Reviews_Corpus.csv: the Chinese movie reviews corpus 
-	•	[feichang_SW]_table.csv: the contingency table of [feichang_SW]
-	•	[feichang SW]_coll_analysis_result.txt: the result of the collexeme analysis for [feichang_SW]
-	•	[youdian_SW]_table.csv: the contingency table of [youdian_SW]
-	•	[youdian SW]_coll_analysis_result.txt: the result of the collexeme analysis for [youdian_SW]
+- ANTUSD.csv: the sentiment dictionary ANTUSD
+- ANTUSD_PosNeg.csv: only the positive and negative words in ANTUSD
+- Yahoo_Chinese_Reviews_Corpus.csv: the Chinese movie reviews corpus 
 Codes:
-	•	coll.analysis.R: the collexeme analysis
-	•	Experiment I.R: Experiment I
-	•	Experiment II.R: Experiment II
-	•	patterns_for_ranksum.R: the patterns with significant sentiment modulation
-	•	preprocessing_for_coll.analysis.R: the preprocessing of data in order to perform the collexeme analysis
-	•	weighting.R: weighting the co-occurrence of sentiment words in patterns based on the dfm of sentiment words
-	•	wilcoxon_ranksum.R: the quantification of the pattern and non-pattern contexts & the Wilcoxon rank-sum test
+- coll.analysis.R: the collexeme analysis
+- Experiment I.R: Experiment I
+- Experiment II.R: Experiment II
+- patterns_for_ranksum.R: the patterns with significant sentiment modulation
+- preprocessing_for_coll.analysis.R: the preprocessing of data in order to perform the collexeme analysis
+- weighting.R: weighting the co-occurrence of sentiment words in patterns based on the dfm of sentiment words
+- wilcoxon_ranksum.R: the quantification of the pattern and non-pattern contexts & the Wilcoxon rank-sum test
 Procedure: 
 Wilcoxon rank-sum test >> Experiment I >> Experiment II >> Post-hoc Collexeme Analysis 
 
@@ -71,17 +65,17 @@ Please run ‘preprocessing_for_coll.analysis.R’ first. This will generate a c
 2. To get the contingency table for [youdian SW] (the prototypical sentiment-mitigating pattern), run line 85–133. This will generate ‘[youdian_SW]_table.csv’.
 
 Please run ‘coll.analysis.R’ for the collexeme analysis and follow the instructions below:
-	•	What is the word W / the name of the construction C you investigate (without spaces)? 
+What is the word W / the name of the construction C you investigate (without spaces)? 
 >> [feichang SW] / [youdian SW]
-	•	Enter the size of the corpus (in constructions or words) without digit grouping symbols!
+Enter the size of the corpus (in constructions or words) without digit grouping symbols!
 >> 92041
-	•	Enter the frequency of [feichang in the corpus you investigate (without digit grouping symbols)
+Enter the frequency of [feichang in the corpus you investigate (without digit grouping symbols)
 >> 190 for [feichang SW] / 55 for [youdian SW]
-	•	Which index of association strength do you want to compute? 
+Which index of association strength do you want to compute? 
 >> -log10 (Fisher-Yates exact, one-tailed)
-	•	How do you want to sort the output? 
+How do you want to sort the output? 
 >> collostruction strength
-	•	Enter the number of decimals you'd like to see in the results
+Enter the number of decimals you'd like to see in the results
 >> 99
-	•	Choose this text file with the raw data!
+Choose this text file with the raw data!
 >> select ‘[feichang]_table.csv’ or ‘[youdian_SW]_table.csv’
