@@ -1,10 +1,11 @@
-cff-version: 1.0.0
+cff-version: 1.0.3
 message: "If you use this software, please cite it using these metadata."
 authors:
-    - family-names: "Wu"
-        given-names: "Nien-Heng"
+- family-names: "Wu"
+  given-names: "Nien-Heng"
+  orcid: ""
 title: "Supplementary Material for Sentiment Analysis of Chinese Reviews Using Morphosyntactic Patterns"
 version: 1.0.0
 doi: 10.6345/NTNU202100009
-date-released: "2021-01-15"
+date-released: 2021-01-15
 url: "https://github.com/marcnhwu/Thesis_Sentiment_Analysis"
