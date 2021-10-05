@@ -1,0 +1,11 @@
+cff-version: 1.0.0
+message: If you use this software, please cite it using these metadata.
+title: Sentiment Analysis of Chinese Reviews Using Morphosyntactic Patterns
+abstract: This is the code and datasets for the machine learning experiments in my thesis project, titled "Sentiment Analysis of Chinese Reviews Using Morphosyntactic Patterns".
+authors:
+    - family-names: Wu
+	given-names: Marc Nien-Heng
+    - name: "Sentiment Analysis of Chinese Reviews Using Morphosyntactic Patterns"
+version: 1.0.0
+date-released: "2021-01-15"
+repository-code: "https://github.com/marcnhwu/Thesis_Sentiment_Analysis"
